@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		549F7F53DAA5AF21BF31483C /* Pods_HWDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C638FE5EC429E1A0A3AEC4DC /* Pods_HWDemo.framework */; };
+		C53042431ECC29CC00D735E9 /* HWNavHeadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C53042421ECC29CC00D735E9 /* HWNavHeadViewController.m */; };
+		C530424A1ECC608A00D735E9 /* HWImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = C53042491ECC608A00D735E9 /* HWImageController.m */; };
+		C530424C1ECC61D400D735E9 /* u=3478543434,1600279262&fm=23&gp=0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C530424B1ECC61D400D735E9 /* u=3478543434,1600279262&fm=23&gp=0.jpg */; };
+		C53042501ECC6F1000D735E9 /* HWView.m in Sources */ = {isa = PBXBuildFile; fileRef = C530424F1ECC6F1000D735E9 /* HWView.m */; };
+		C58167811EE109930002D85B /* HWGPUImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = C58167801EE109930002D85B /* HWGPUImageController.m */; };
 		C58DBBDE1EC2E49A00382FD4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C58DBBDD1EC2E49A00382FD4 /* main.m */; };
 		C58DBBE11EC2E49A00382FD4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C58DBBE01EC2E49A00382FD4 /* AppDelegate.m */; };
 		C58DBBE41EC2E49A00382FD4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C58DBBE31EC2E49A00382FD4 /* ViewController.m */; };
@@ -15,6 +21,8 @@
 		C58DBBEC1EC2E49A00382FD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C58DBBEA1EC2E49A00382FD4 /* LaunchScreen.storyboard */; };
 		C58DBBF71EC2E49A00382FD4 /* HWDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C58DBBF61EC2E49A00382FD4 /* HWDemoTests.m */; };
 		C58DBC021EC2E49A00382FD4 /* HWDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C58DBC011EC2E49A00382FD4 /* HWDemoUITests.m */; };
+		C58DBC111EC2E88400382FD4 /* HWSelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C58DBC101EC2E88400382FD4 /* HWSelectorViewController.m */; };
+		C5DD097F1EC2EF6B000525EE /* HWSelecorView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5DD097E1EC2EF6B000525EE /* HWSelecorView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +43,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		25424420ADBCB55094512790 /* Pods-HWDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HWDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HWDemo/Pods-HWDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		C1C460841FA36903184B073D /* Pods-HWDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HWDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-HWDemo/Pods-HWDemo.release.xcconfig"; sourceTree = "<group>"; };
+		C53042411ECC29CC00D735E9 /* HWNavHeadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWNavHeadViewController.h; sourceTree = "<group>"; };
+		C53042421ECC29CC00D735E9 /* HWNavHeadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWNavHeadViewController.m; sourceTree = "<group>"; };
+		C53042451ECC2F9D00D735E9 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		C53042481ECC608A00D735E9 /* HWImageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWImageController.h; sourceTree = "<group>"; };
+		C53042491ECC608A00D735E9 /* HWImageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWImageController.m; sourceTree = "<group>"; };
+		C530424B1ECC61D400D735E9 /* u=3478543434,1600279262&fm=23&gp=0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "u=3478543434,1600279262&fm=23&gp=0.jpg"; sourceTree = "<group>"; };
+		C530424E1ECC6F1000D735E9 /* HWView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWView.h; sourceTree = "<group>"; };
+		C530424F1ECC6F1000D735E9 /* HWView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWView.m; sourceTree = "<group>"; };
+		C581677F1EE109930002D85B /* HWGPUImageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWGPUImageController.h; sourceTree = "<group>"; };
+		C58167801EE109930002D85B /* HWGPUImageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWGPUImageController.m; sourceTree = "<group>"; };
 		C58DBBD91EC2E49A00382FD4 /* HWDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HWDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C58DBBDD1EC2E49A00382FD4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C58DBBDF1EC2E49A00382FD4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +71,11 @@
 		C58DBBFD1EC2E49A00382FD4 /* HWDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HWDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C58DBC011EC2E49A00382FD4 /* HWDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HWDemoUITests.m; sourceTree = "<group>"; };
 		C58DBC031EC2E49A00382FD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C58DBC0F1EC2E88400382FD4 /* HWSelectorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWSelectorViewController.h; sourceTree = "<group>"; };
+		C58DBC101EC2E88400382FD4 /* HWSelectorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWSelectorViewController.m; sourceTree = "<group>"; };
+		C5DD097D1EC2EF6B000525EE /* HWSelecorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWSelecorView.h; sourceTree = "<group>"; };
+		C5DD097E1EC2EF6B000525EE /* HWSelecorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWSelecorView.m; sourceTree = "<group>"; };
+		C638FE5EC429E1A0A3AEC4DC /* Pods_HWDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HWDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				549F7F53DAA5AF21BF31483C /* Pods_HWDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +104,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E43FEA97A6EFD27CA254AF1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				25424420ADBCB55094512790 /* Pods-HWDemo.debug.xcconfig */,
+				C1C460841FA36903184B073D /* Pods-HWDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C53042401ECC290E00D735E9 /* Nav */ = {
+			isa = PBXGroup;
+			children = (
+				C53042411ECC29CC00D735E9 /* HWNavHeadViewController.h */,
+				C53042421ECC29CC00D735E9 /* HWNavHeadViewController.m */,
+			);
+			name = Nav;
+			sourceTree = "<group>";
+		};
+		C53042471ECC605700D735E9 /* ImageController */ = {
+			isa = PBXGroup;
+			children = (
+				C53042481ECC608A00D735E9 /* HWImageController.h */,
+				C53042491ECC608A00D735E9 /* HWImageController.m */,
+				C530424D1ECC6EF800D735E9 /* view */,
+			);
+			name = ImageController;
+			sourceTree = "<group>";
+		};
+		C530424D1ECC6EF800D735E9 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				C530424E1ECC6F1000D735E9 /* HWView.h */,
+				C530424F1ECC6F1000D735E9 /* HWView.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		C581677E1EE1095B0002D85B /* GPUImage */ = {
+			isa = PBXGroup;
+			children = (
+				C581677F1EE109930002D85B /* HWGPUImageController.h */,
+				C58167801EE109930002D85B /* HWGPUImageController.m */,
+			);
+			name = GPUImage;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		C58DBBD01EC2E49A00382FD4 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +158,8 @@
 				C58DBBF51EC2E49A00382FD4 /* HWDemoTests */,
 				C58DBC001EC2E49A00382FD4 /* HWDemoUITests */,
 				C58DBBDA1EC2E49A00382FD4 /* Products */,
+				5E43FEA97A6EFD27CA254AF1 /* Pods */,
+				F840938264FB35BBF5D7FC1C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +180,10 @@
 				C58DBBE01EC2E49A00382FD4 /* AppDelegate.m */,
 				C58DBBE21EC2E49A00382FD4 /* ViewController.h */,
 				C58DBBE31EC2E49A00382FD4 /* ViewController.m */,
+				C581677E1EE1095B0002D85B /* GPUImage */,
+				C53042471ECC605700D735E9 /* ImageController */,
+				C53042401ECC290E00D735E9 /* Nav */,
+				C5DD097B1EC2EBE7000525EE /* Selector */,
 				C58DBBE51EC2E49A00382FD4 /* Main.storyboard */,
 				C58DBBE81EC2E49A00382FD4 /* Assets.xcassets */,
 				C58DBBEA1EC2E49A00382FD4 /* LaunchScreen.storyboard */,
@@ -117,7 +196,9 @@
 		C58DBBDC1EC2E49A00382FD4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C530424B1ECC61D400D735E9 /* u=3478543434,1600279262&fm=23&gp=0.jpg */,
 				C58DBBDD1EC2E49A00382FD4 /* main.m */,
+				C53042451ECC2F9D00D735E9 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -140,6 +221,33 @@
 			path = HWDemoUITests;
 			sourceTree = "<group>";
 		};
+		C5DD097B1EC2EBE7000525EE /* Selector */ = {
+			isa = PBXGroup;
+			children = (
+				C5DD097C1EC2EF00000525EE /* View */,
+				C58DBC0F1EC2E88400382FD4 /* HWSelectorViewController.h */,
+				C58DBC101EC2E88400382FD4 /* HWSelectorViewController.m */,
+			);
+			name = Selector;
+			sourceTree = "<group>";
+		};
+		C5DD097C1EC2EF00000525EE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C5DD097D1EC2EF6B000525EE /* HWSelecorView.h */,
+				C5DD097E1EC2EF6B000525EE /* HWSelecorView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		F840938264FB35BBF5D7FC1C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C638FE5EC429E1A0A3AEC4DC /* Pods_HWDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +255,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C58DBC061EC2E49A00382FD4 /* Build configuration list for PBXNativeTarget "HWDemo" */;
 			buildPhases = (
+				99ABAB98BC66AF4FCF03D424 /* [CP] Check Pods Manifest.lock */,
 				C58DBBD51EC2E49A00382FD4 /* Sources */,
 				C58DBBD61EC2E49A00382FD4 /* Frameworks */,
 				C58DBBD71EC2E49A00382FD4 /* Resources */,
+				F3835A80CCC2918306F5BF12 /* [CP] Embed Pods Frameworks */,
+				5D492C374CFF2222FD2A8681 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -202,13 +313,14 @@
 		C58DBBD11EC2E49A00382FD4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = HW;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = Hw;
 				TargetAttributes = {
 					C58DBBD81EC2E49A00382FD4 = {
 						CreatedOnToolsVersion = 8.3.1;
-						DevelopmentTeam = 56VND8YVS8;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 56JAM34B5U;
+						ProvisioningStyle = Manual;
 					};
 					C58DBBF11EC2E49A00382FD4 = {
 						CreatedOnToolsVersion = 8.3.1;
@@ -249,6 +361,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C530424C1ECC61D400D735E9 /* u=3478543434,1600279262&fm=23&gp=0.jpg in Resources */,
 				C58DBBEC1EC2E49A00382FD4 /* LaunchScreen.storyboard in Resources */,
 				C58DBBE91EC2E49A00382FD4 /* Assets.xcassets in Resources */,
 				C58DBBE71EC2E49A00382FD4 /* Main.storyboard in Resources */,
@@ -271,14 +384,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5D492C374CFF2222FD2A8681 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HWDemo/Pods-HWDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99ABAB98BC66AF4FCF03D424 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F3835A80CCC2918306F5BF12 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HWDemo/Pods-HWDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C58DBBD51EC2E49A00382FD4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5DD097F1EC2EF6B000525EE /* HWSelecorView.m in Sources */,
+				C58167811EE109930002D85B /* HWGPUImageController.m in Sources */,
+				C530424A1ECC608A00D735E9 /* HWImageController.m in Sources */,
+				C58DBC111EC2E88400382FD4 /* HWSelectorViewController.m in Sources */,
 				C58DBBE41EC2E49A00382FD4 /* ViewController.m in Sources */,
 				C58DBBE11EC2E49A00382FD4 /* AppDelegate.m in Sources */,
+				C53042501ECC6F1000D735E9 /* HWView.m in Sources */,
 				C58DBBDE1EC2E49A00382FD4 /* main.m in Sources */,
+				C53042431ECC29CC00D735E9 /* HWNavHeadViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,25 +594,34 @@
 		};
 		C58DBC071EC2E49A00382FD4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25424420ADBCB55094512790 /* Pods-HWDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 56VND8YVS8;
+				DEVELOPMENT_TEAM = 56JAM34B5U;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/hw/Desktop/hw/HWDemo/HWDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = HWDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Hw.HWDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fosun.wallet.pay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "365a4794-671b-44db-b90b-311a908cb064";
+				PROVISIONING_PROFILE_SPECIFIER = fxxx;
 			};
 			name = Debug;
 		};
 		C58DBC081EC2E49A00382FD4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1C460841FA36903184B073D /* Pods-HWDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 56VND8YVS8;
+				DEVELOPMENT_TEAM = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/hw/Desktop/hw/HWDemo/HWDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = HWDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Hw.HWDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fosun.wallet.pay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -518,6 +694,7 @@
 				C58DBC081EC2E49A00382FD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C58DBC091EC2E49A00382FD4 /* Build configuration list for PBXNativeTarget "HWDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +703,7 @@
 				C58DBC0B1EC2E49A00382FD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C58DBC0C1EC2E49A00382FD4 /* Build configuration list for PBXNativeTarget "HWDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +712,7 @@
 				C58DBC0E1EC2E49A00382FD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
