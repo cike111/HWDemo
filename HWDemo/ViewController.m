@@ -24,7 +24,7 @@
     self.arr = @[@"HWSelectorViewController",@"HWNavHeadViewController",@"HWImageController",@"HWGPUImageController"];
     self.arr1 = @[@"选择器",@"头部动画",@"图像处理",@"GPUImage"];
     self.tabView = [[UITableView alloc]init];
-    self.tabView.backgroundColor = [UIColor redColor];
+//    self.tabView.backgroundColor = [UIColor redColor];
     self.tabView.dataSource = self;
     self.tabView.delegate = self;
     [self.view addSubview:self.tabView];
