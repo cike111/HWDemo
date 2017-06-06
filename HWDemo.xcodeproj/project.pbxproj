@@ -13,6 +13,11 @@
 		C530424C1ECC61D400D735E9 /* u=3478543434,1600279262&fm=23&gp=0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C530424B1ECC61D400D735E9 /* u=3478543434,1600279262&fm=23&gp=0.jpg */; };
 		C53042501ECC6F1000D735E9 /* HWView.m in Sources */ = {isa = PBXBuildFile; fileRef = C530424F1ECC6F1000D735E9 /* HWView.m */; };
 		C58167811EE109930002D85B /* HWGPUImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = C58167801EE109930002D85B /* HWGPUImageController.m */; };
+		C58167E31EE68B870002D85B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C58167E21EE68B870002D85B /* AVFoundation.framework */; };
+		C58167E51EE68B980002D85B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C58167E41EE68B980002D85B /* QuartzCore.framework */; };
+		C58167E71EE68B9F0002D85B /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C58167E61EE68B9F0002D85B /* OpenGLES.framework */; };
+		C58167E91EE68BAA0002D85B /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C58167E81EE68BAA0002D85B /* CoreVideo.framework */; };
+		C58167EB1EE68BB30002D85B /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C58167EA1EE68BB30002D85B /* CoreMedia.framework */; };
 		C58DBBDE1EC2E49A00382FD4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C58DBBDD1EC2E49A00382FD4 /* main.m */; };
 		C58DBBE11EC2E49A00382FD4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C58DBBE01EC2E49A00382FD4 /* AppDelegate.m */; };
 		C58DBBE41EC2E49A00382FD4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C58DBBE31EC2E49A00382FD4 /* ViewController.m */; };
@@ -55,6 +60,11 @@
 		C530424F1ECC6F1000D735E9 /* HWView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWView.m; sourceTree = "<group>"; };
 		C581677F1EE109930002D85B /* HWGPUImageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWGPUImageController.h; sourceTree = "<group>"; };
 		C58167801EE109930002D85B /* HWGPUImageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWGPUImageController.m; sourceTree = "<group>"; };
+		C58167E21EE68B870002D85B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		C58167E41EE68B980002D85B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C58167E61EE68B9F0002D85B /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		C58167E81EE68BAA0002D85B /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		C58167EA1EE68BB30002D85B /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		C58DBBD91EC2E49A00382FD4 /* HWDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HWDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C58DBBDD1EC2E49A00382FD4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C58DBBDF1EC2E49A00382FD4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -83,6 +93,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C58167EB1EE68BB30002D85B /* CoreMedia.framework in Frameworks */,
+				C58167E91EE68BAA0002D85B /* CoreVideo.framework in Frameworks */,
+				C58167E71EE68B9F0002D85B /* OpenGLES.framework in Frameworks */,
+				C58167E51EE68B980002D85B /* QuartzCore.framework in Frameworks */,
+				C58167E31EE68B870002D85B /* AVFoundation.framework in Frameworks */,
 				549F7F53DAA5AF21BF31483C /* Pods_HWDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -243,6 +258,11 @@
 		F840938264FB35BBF5D7FC1C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C58167EA1EE68BB30002D85B /* CoreMedia.framework */,
+				C58167E81EE68BAA0002D85B /* CoreVideo.framework */,
+				C58167E61EE68B9F0002D85B /* OpenGLES.framework */,
+				C58167E41EE68B980002D85B /* QuartzCore.framework */,
+				C58167E21EE68B870002D85B /* AVFoundation.framework */,
 				C638FE5EC429E1A0A3AEC4DC /* Pods_HWDemo.framework */,
 			);
 			name = Frameworks;
@@ -544,6 +564,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -586,6 +607,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -599,7 +621,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 56JAM34B5U;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/hw/Desktop/hw/HWDemo/HWDemo/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/HWDemo/PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 				INFOPLIST_FILE = HWDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fosun.wallet.pay;
@@ -616,7 +639,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/hw/Desktop/hw/HWDemo/HWDemo/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/HWDemo/PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 				INFOPLIST_FILE = HWDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fosun.wallet.pay;
