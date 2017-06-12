@@ -18,6 +18,7 @@
 		C58167E71EE68B9F0002D85B /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C58167E61EE68B9F0002D85B /* OpenGLES.framework */; };
 		C58167E91EE68BAA0002D85B /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C58167E81EE68BAA0002D85B /* CoreVideo.framework */; };
 		C58167EB1EE68BB30002D85B /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C58167EA1EE68BB30002D85B /* CoreMedia.framework */; };
+		C58167ED1EE824810002D85B /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C58167EC1EE824800002D85B /* Photos.framework */; };
 		C58DBBDE1EC2E49A00382FD4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C58DBBDD1EC2E49A00382FD4 /* main.m */; };
 		C58DBBE11EC2E49A00382FD4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C58DBBE01EC2E49A00382FD4 /* AppDelegate.m */; };
 		C58DBBE41EC2E49A00382FD4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C58DBBE31EC2E49A00382FD4 /* ViewController.m */; };
@@ -65,6 +66,7 @@
 		C58167E61EE68B9F0002D85B /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		C58167E81EE68BAA0002D85B /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		C58167EA1EE68BB30002D85B /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		C58167EC1EE824800002D85B /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 		C58DBBD91EC2E49A00382FD4 /* HWDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HWDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C58DBBDD1EC2E49A00382FD4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C58DBBDF1EC2E49A00382FD4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C58167ED1EE824810002D85B /* Photos.framework in Frameworks */,
 				C58167EB1EE68BB30002D85B /* CoreMedia.framework in Frameworks */,
 				C58167E91EE68BAA0002D85B /* CoreVideo.framework in Frameworks */,
 				C58167E71EE68B9F0002D85B /* OpenGLES.framework in Frameworks */,
@@ -258,6 +261,7 @@
 		F840938264FB35BBF5D7FC1C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C58167EC1EE824800002D85B /* Photos.framework */,
 				C58167EA1EE68BB30002D85B /* CoreMedia.framework */,
 				C58167E81EE68BAA0002D85B /* CoreVideo.framework */,
 				C58167E61EE68B9F0002D85B /* OpenGLES.framework */,
