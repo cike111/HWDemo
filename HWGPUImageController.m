@@ -68,13 +68,19 @@
     [self.view addSubview:filtersView];
 }
 
-
+- (void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    [self.mCamera stopCameraCapture];
+    self.mCamera = nil;
+}
 - (void)savepicture{
     if (self.mCamera) {
        
         [_mCamera capturePhotoAsJPEGProcessedUpToFilter:_fifter withCompletionHandler:^(NSData *processedJPEG, NSError *error) {
             if (error) {
                 NSLog(@"ereerreertertreret%@",error);
+                [_mCamera stopCameraCapture];
+                self.mCamera = nil;
                 return ;
             }
             UIImage * image = [UIImage imageWithData:processedJPEG];
@@ -86,11 +92,12 @@
             } completionHandler:^(BOOL success, NSError * _Nullable error) {
                 
                 NSLog(@"success = %d, error = %@", success, error);
+                [_mCamera stopCameraCapture];
+                self.mCamera = nil;
                 
             }];
         }];
-        [_mCamera stopCameraCapture];
-        self.mCamera = nil;
+        
 
 
     }
@@ -316,6 +323,79 @@
         case 8:
         {
             
+            if (self.mCamera) {
+                [_mCamera removeAllTargets];
+                
+                UIView *contentView = [[UIView alloc] initWithFrame:self.gpuImageView.bounds];
+                NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+                [formatter setDateFormat:@"yyyy年MM月dd日hh:mm:ss"];
+                NSDate *currentDate = [NSDate date];
+                NSString *timeString = [formatter stringFromDate:currentDate];
+                UILabel *timestampLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 100, 300, 30)];
+                timestampLabel.text = timeString;
+                timestampLabel.textColor = [UIColor redColor];
+                [contentView addSubview:timestampLabel];
+                GPUImageUIElement *uiElement = [[GPUImageUIElement alloc] initWithView:contentView];
+                GPUImageDissolveBlendFilter *filter = [[GPUImageDissolveBlendFilter alloc] init];
+                filter.mix = 0.5;
+                
+                GPUImageFilter *videoFilter = [[GPUImageFilter alloc] init];
+                UIPinchGestureRecognizer *pinchGestureRecognizer = [[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(pinchView:)];
+                [self.gpuImageView addGestureRecognizer:pinchGestureRecognizer];
+                [self.view addSubview:self.gpuImageView];
+//                //组合
+                [_mCamera addTarget:videoFilter];
+                [videoFilter addTarget:filter];
+                [uiElement addTarget:filter];
+                
+                [filter addTarget:self.gpuImageView];
+                self.fifter = filter;
+    
+                [videoFilter setFrameProcessingCompletionBlock:^(GPUImageOutput *output, CMTime time) {
+               
+                    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+                    [formatter setDateFormat:@"yyyy年MM月dd日hh:mm:ss"];
+                    NSDate *currentDate = [NSDate date];
+                    NSString *timeString = [formatter stringFromDate:currentDate];
+                    timestampLabel.text = timeString;
+                    [uiElement update];
+                    
+                }];
+            }else{
+                if (!self.image) {
+                    return;
+                }
+                UIView *contentView = [[UIView alloc] initWithFrame:self.view.bounds];
+                NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+                [formatter setDateFormat:@"yyyy年MM月dd日hh:mm:ss"];
+                NSDate *currentDate = [NSDate date];
+                NSString *timeString = [formatter stringFromDate:currentDate];
+                UILabel *timestampLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 100, 300, 30)];
+                timestampLabel.text = timeString;
+                timestampLabel.textColor = [UIColor redColor];
+                [contentView addSubview:timestampLabel];
+                GPUImageUIElement *uiElement = [[GPUImageUIElement alloc] initWithView:contentView];
+                
+                
+                GPUImagePicture * image = [[GPUImagePicture alloc]initWithImage:self.image];            //创建滤镜
+                GPUImageDissolveBlendFilter *filter = [[GPUImageDissolveBlendFilter alloc] init];
+                filter.mix = 0.5;
+                
+                GPUImageFilter *videoFilter = [[GPUImageFilter alloc] init];
+                //            [self addTarget:videoFilter];
+                [image addTarget:videoFilter];
+                [videoFilter addTarget:filter];
+                [uiElement addTarget:filter];
+                
+                // 添加滤镜
+                [filter forceProcessingAtSize:self.image.size];
+                [filter useNextFrameForImageCapture];
+                //            [videoCamera startCameraCapture];
+                [image processImage];
+                
+    self.imageView.image = [filter imageFromCurrentFramebuffer];
+            }
+  
                     
         }
             
@@ -368,8 +448,7 @@
     [_mCamera addTarget:filter];
     [filter addTarget:self.gpuImageView];
     self.fifter = filter;
-    //相机开始运行
-    [_mCamera startCameraCapture];
+
 
 }
 

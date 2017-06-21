@@ -21,8 +21,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"首页";
-    self.arr = @[@"HWSelectorViewController",@"HWImageController",@"HWGPUImageController"];
-    self.arr1 = @[@"选择器",@"图像处理",@"GPUImage"];
+    self.arr = @[@"HWSelectorViewController",@"HWImageController",@"HWGPUImageController",@"HWCamerController"];
+    self.arr1 = @[@"选择器",@"图像处理",@"GPUImage相机",@"相机"];
     self.tabView = [[UITableView alloc]init];
 //    self.tabView.backgroundColor = [UIColor redColor];
     self.tabView.dataSource = self;
@@ -35,7 +35,7 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 - (void)viewDidAppear:(BOOL)animated{
-    
+    [super viewDidAppear:animated];
 }
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
     return YES;
@@ -71,7 +71,7 @@
     UIViewController * vc = [[cls alloc]init];
     [self.navigationController pushViewController:vc animated:YES];
 }
-
+//     AFNetworkReachabilityManager *manager = [AFNetworkReachabilityManager sharedManager];
 
 
 @end

@@ -59,6 +59,7 @@
     
     //释放颜色空间
     CGColorSpaceRelease(colorSpace);
+    CGGradientRelease(gradient);
 }
 
 
