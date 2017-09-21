@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E6249D81F73544000F47A62 /* HWShoppinglistController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E6249D71F73544000F47A62 /* HWShoppinglistController.m */; };
 		549F7F53DAA5AF21BF31483C /* Pods_HWDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C638FE5EC429E1A0A3AEC4DC /* Pods_HWDemo.framework */; };
 		C53042431ECC29CC00D735E9 /* HWNavHeadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C53042421ECC29CC00D735E9 /* HWNavHeadViewController.m */; };
 		C530424A1ECC608A00D735E9 /* HWImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = C53042491ECC608A00D735E9 /* HWImageController.m */; };
@@ -51,6 +52,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E6249D61F73544000F47A62 /* HWShoppinglistController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWShoppinglistController.h; sourceTree = "<group>"; };
+		0E6249D71F73544000F47A62 /* HWShoppinglistController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWShoppinglistController.m; sourceTree = "<group>"; };
 		25424420ADBCB55094512790 /* Pods-HWDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HWDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HWDemo/Pods-HWDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		C1C460841FA36903184B073D /* Pods-HWDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HWDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-HWDemo/Pods-HWDemo.release.xcconfig"; sourceTree = "<group>"; };
 		C53042411ECC29CC00D735E9 /* HWNavHeadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWNavHeadViewController.h; sourceTree = "<group>"; };
@@ -213,6 +216,8 @@
 				C58DBBE01EC2E49A00382FD4 /* AppDelegate.m */,
 				C58DBBE21EC2E49A00382FD4 /* ViewController.h */,
 				C58DBBE31EC2E49A00382FD4 /* ViewController.m */,
+				0E6249D61F73544000F47A62 /* HWShoppinglistController.h */,
+				0E6249D71F73544000F47A62 /* HWShoppinglistController.m */,
 				C543A6D61EEE40CA008A83CE /* camera */,
 				C581677E1EE1095B0002D85B /* GPUImage */,
 				C53042471ECC605700D735E9 /* ImageController */,
@@ -483,6 +488,7 @@
 				C530424A1ECC608A00D735E9 /* HWImageController.m in Sources */,
 				C543A6D91EEE4106008A83CE /* HWCamerController.m in Sources */,
 				C58DBC111EC2E88400382FD4 /* HWSelectorViewController.m in Sources */,
+				0E6249D81F73544000F47A62 /* HWShoppinglistController.m in Sources */,
 				C58DBBE41EC2E49A00382FD4 /* ViewController.m in Sources */,
 				C58DBBE11EC2E49A00382FD4 /* AppDelegate.m in Sources */,
 				C53042501ECC6F1000D735E9 /* HWView.m in Sources */,
