@@ -22,7 +22,7 @@
     [super viewDidLoad];
     self.title = @"首页";
     self.arr = @[@"HWSelectorViewController",@"HWImageController",@"HWGPUImageController",@"HWCamerController",@"HWShoppinglistController"];
-    self.arr1 = @[@"选择器",@"图像处理",@"GPUImage相机",@"相机",@"购物车动画"];
+    self.arr1 = @[@"选择器",@"图像处理",@"GPUImage相机",@"相机",@"动画"];
 
     self.tabView = [[UITableView alloc]init];
 //    self.tabView.backgroundColor = [UIColor redColor];
